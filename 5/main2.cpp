@@ -52,7 +52,9 @@ int main() {
         }
 
         if (!readingUpdates) {
-            int a, b = 0;
+            int a = 0;
+            int b = 0;
+
             for (size_t i = 0; i < readLine.length(); i++)
                 if (readLine[i] == '|') {
                     a = std::stoi(readLine.substr(0, i));
